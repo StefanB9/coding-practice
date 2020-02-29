@@ -9,23 +9,23 @@ class TestProgram(unittest.TestCase):
 
     def test_case_2(self):
         tree = BinaryTree(1).insert([2])
-        self.assertEqual(self.assertEqual(program.branchSums(tree), [3]))
+        self.assertEqual(program.branchSums(tree), [3])
 
     def test_case_3(self):
         tree = BinaryTree(1).insert([2, 3])
-        self.assertEqual(self.assertEqual(program.branchSums(tree), [3, 4]))
+        self.assertEqual(program.branchSums(tree), [3, 4])
 
     def test_case_4(self):
         tree = BinaryTree(1).insert([2, 3, 4, 5])
-        self.assertEqual(self.assertEqual(program.branchSums(tree), [7, 8, 4]))
+        self.assertEqual(program.branchSums(tree), [7, 8, 4])
 
     def test_case_5(self):
         tree = BinaryTree(1).insert([2, 3, 4, 5, 6, 7, 8, 9, 10])
-        self.assertEqual(self.assertEqual(program.branchSums(tree), [15, 16, 18, 10, 11]))
+        self.assertEqual(program.branchSums(tree), [15, 16, 18, 10, 11])
 
     def test_case_6(self):
         tree = BinaryTree(1).insert([2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 1, 1])
-        self.assertEqual(self.assertEqual(program.branchSums(tree), [15, 16, 18, 9, 11, 11, 11]))
+        self.assertEqual(program.branchSums(tree), [15, 16, 18, 9, 11, 11, 11])
 
     def test_case_7(self):
         tree = BinaryTree(0)
